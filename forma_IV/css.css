@@ -1,0 +1,51 @@
+body {
+  background-color: #2e2e2e;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+#espaco {
+  height: 200%;
+}
+.titulo {
+  color: white;
+  font-size: 200%;
+  font-weight: bold;
+  margin-top: -8%;
+}
+
+.subtitulo {
+  color: white;
+  font-size: 150%;
+  text-align: center;
+}
+
+.subtitulo2 {
+  color: white;
+  font-size: 150%;
+  text-align: center;
+  margin-top: -7%;
+}
+.inserir {
+  background-color: #1a1a1a;
+  margin-left: 29%;
+  margin-top: 1%;
+  width: 35%;
+  height: 25%;
+  border: 1px solid black;
+  border-radius: 15%;
+  border-color: white;
+}
+.texto {
+  color: white;
+  font-size: 110%;
+}
+#rodape {
+  background-color: #131313;
+  font-size: 110%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Inserindo o bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Formulário</title>
+    <link href="css.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Cabeçalho-->
+    <div style="background-color: #131313">
+      <!--Logo + link-->
+      <a href="index.html"
+        ><img src="simbolo.png" style="width: 6.8%; margin-right: 89%"
+      /></a>
+    </div>
+
+    <!--Modal do usuário-->
+    <dialog id="usermodal" style="background-color:#2a2a2a;">
+      <div class="container">
+          <form>
+              <h2>Boa Noite</h2>
+              <input type="text" name="login" placeholder="Login">
+              <input type="password" name="senha" placeholder="Senha"></br>
+              <button type="submit" style="margin-top:2%;">Entrar</button>    
+          </form>
+      </div>
+  </dialog>
+
+  <!--Modal de cadastro-->
+  <dialog id="casmodal" style="background-color: #2a2a2a;">
+      <div class="container">
+          <form>
+              <h2>Tudo bem?</h2>
+          </form>
+      </div>
+  </dialog>
+
+    <!--Rodapé-->
+    <div id="rodape">
+        <a href="https://github.com/Cz24-Type3" style="align-content: center; margin-left: 34%; color:white;">GitHub</a>
+        <a href="#" style="align-content: center; margin-left: 20%; color:white;">Mais informações</a>
+    </div>
+    <script src="js.js"></script>
+</body>
+<script src="js.js"></script>
+</html>

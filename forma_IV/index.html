@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Inserindo o bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Gerenênciamento de estoque</title>
+    <link href="css.css" rel="stylesheet">
+</head>
+<body>
+    <!--Cabeçalho-->
+    <div style="background-color:#131313;">
+        <!--Logo + link-->
+        <a href="index.html"><img src="simbolo.png" style="width: 6.8%; margin-right: 89%;"></a>
+        <!--Login-->
+        <p style="width: 5%; margin-left:85%; margin-top:-2%; font-size: 120%; color: white;" id="userbutton">Entrar</p>
+        <!--Cadastro-->
+        <P id="casbutton" style="color:white; margin-top: -2.7%; margin-left: 90%; font-size: 120%;"> Cadastrar-se</P>
+    </div>
+
+    <div style="margin-right:1%; margin-top:11%;">
+        <p class="titulo" id="espaco">Estoque de ferramentas</p>
+        <p class="texto" style="margin-top:5%;">Neste site você tem total acesso a nossas ferramentas e poderá:</br> consulta-las, altera-las, as exclui-las e muitas informações interessantes!</p>
+        <div style="margin-top:5%;">
+            <a class="subtitulo" href="consulta.html" style="margin-right: 1%;">🔍 Consultar ferramentas</a>
+            <a class="subtitulo" href="editar.html" style="margin-left:2%;">☯️ Adicionar e/ou remover</a></br></br></br>
+            <a class="subtitulo2" href="realotiro.html" style="margin-right: -4%;">📋 Relatório</a>
+            <a class="subtitulo2" href="grafico.html" style="margin-left:11%;">📊 Gráfico</a>
+        </div>
+    </div>
+
+    <!--Modal do usuário-->
+    <dialog id="usermodal" style="background-color:#2a2a2a;">
+        <div class="container">
+            <form action="login.php" method="post">
+                <h2>Colaborador</h2>
+                <label for="email">E-mail</label>
+                <input type="text" name="email" placeholder="E-mail" required></br>
+
+                <label for="usenha"> Senha</label>
+                <input type="password" name="usenha" placeholder="Senha" required></br></br>
+                
+                <button type="submit" style="margin-top:2%;">Entrar</button>    
+            </form>
+        </div>
+    </dialog>
+
+    <!--Modal de cadastro-->
+    <dialog id="casmodal" style="background-color: #2a2a2a;">
+        <div class="container">
+            <form action="cadastro.php" method="post">
+                <h2>Cadastrar colaborador</h2>
+
+                <label for="Nome">Nome</label>
+                <input type="text" name="nome" placeholder="Nome" required></br>
+
+                <label for="email">E-mail</label>
+                <input type="text" name="email" placeholder="E-mail" required></br>
+
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="14" required></br>
+                <span id="cpf-msg"></span>
+
+                <label for="ulogin">Login</label>
+                <input type="text" name="ulogin" placeholder="Login" required></br>
+
+                <label for="usenha">Senha</label>
+                <input type="password" name="usenha" placeholder="Senha" required></br>
+
+                <label for="cusenha">Confirmar senha</label>
+                <input type="password" name="cusenha" placeholder="Confirmar senha" required></br>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </dialog>
+
+    <!--Rodapé-->
+    <div id="rodape">
+        <a href="https://github.com/Cz24-Type3" style="align-content: center; margin-left: 34%; color:white;">GitHub</a>
+        <a href="#" style="align-content: center; margin-left: 20%; color:white;">Mais informações</a>
+    </div>
+
+    
+</body>
+<script src="js.js"></script>
+</html>
