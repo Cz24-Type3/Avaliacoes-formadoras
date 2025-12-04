@@ -15,6 +15,11 @@ buttoncas.onclick = function () {
   modalcas.showModal();
 };
 
+//logoff
+function sair(){
+  window.location.href ='index.html';
+};
+
 //Validador de CPF
 
 function validarCPF(CPF) {
